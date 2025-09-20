@@ -21,12 +21,12 @@
 <body>
   <nav class="navbar">
     <!-- Left: Logo -->
-    <div class="logo">Musaffa</div>
+     <a href="index.html"><img src="images/musaffa-logo-white.png" alt=""></a>
 
     <!-- Center: Navigation + Search -->
     <div class="nav-center">
       <ul class="nav-links">
-        <li><a href="#">For Business</a></li>
+        <li><a href="business.html">For Business</a></li>
         <li>
           <a href="#">About Us <i class="fas fa-caret-down"></i></a>
           <div class="dropdown">
@@ -50,12 +50,6 @@
           <a href="#" class="btn-login">Sign in</a>
           <a href="#" class="btn-logout">Free Sign Up</a>
     </div>
-
-    <!-- Right: Cart and Login -->
-    <!-- <div class="actions">
-      <a href="#"><i class="fas fa-shopping-cart"></i></a>
-      <a href="#" class="btn-login">Login</a>
-    </div> -->
   </nav>
 
 
@@ -89,15 +83,11 @@
         </div>
     </section> -->
 
-    <!-- <section class="bannner">
-        <div class="left-col"></div>
-        <div class="right-col">
-            <h1>The go-to platform for Shariah-compliant investment research</h1>
-            <button>
-                <a href="">VIEW MY PORTFOLIO</a>
-            </button>
-        </div>
-    </section> -->
+    <section class="carousel">
+      <video controls="controls" autoplay="autoplay" width="100%">
+        <source src="slider_musaffa.mp4" type="video/mp4"></source>
+      </video>
+    </section>
 
     <!--  Banner section -->
     <section class="banner">
@@ -105,7 +95,7 @@
 
         <div class="portfolio">
           <div class="left-col">
-             <iframe width="561" height="316" src="https://www.youtube.com/embed/eePMLW_cW-g?list=TLGGLJ6C-BIEoUMxODA5MjAyNQ" 
+             <iframe width="561" height="316" src="https://www.youtube.com/embed/eePMLW_cW-g?list=TLGGLJ6C-BIEoUMyMDA5MjAyNQ" 
              title="Invest in Musaffa &amp; Own a Part of a Leading US-based Islamic Fintech Company" frameborder="0" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -217,10 +207,11 @@
       <div class="left-col">
         <div class="first-line">  
           <h4>All Portfolios</h4>
-          <div class="sample">
+          <button class="sample">
             <input type="text" placeholder="s" readonly>
             <span>Sample Portfolio</span>
-          </div>
+            <i class="fas fa-caret-down"></i>
+          </button>
           <a href="#">View Detailed Analytics</a>
         </div>
 
@@ -239,12 +230,12 @@
             <span>Cash</span>
             <span id="prices">$7,137.00</span>
           </div>
+        </div>
 
-          <div class="duration">
-            <button class="duration-btn">week</button>
-            <button class="duration-btn">month</button>
-            <button class="duration-btn">year</button>
-          </div>
+        <div class="duration">
+          <button class="duration-btn">week</button>
+          <button class="duration-btn">month</button>
+          <button class="duration-btn">year</button>
         </div>
       </div>
 
@@ -254,9 +245,150 @@
     </section>
 
     <!-- Market Section -->
-     <section class="market">
+    <section class="market">
+      <h1 id="header">Market News</h1>
+    </section>
+
+    <!-- Musaffa Academy Section -->
+    <section class="academy">
+      <h1 id="header">Musaffa Academy</h1>
+      <div class="card-section">
+        <div class="academy-card">
+          <img src="images/card-img_1.png" alt="">
+          <div class="card-text">
+            <h6>Jul 28, 2025, 1:46:25 AM</h6>
+            <p>How to Reasearch Stocks: A Step-by-Step Guide for New Investors</p>
+          </div>
+        </div>
+
+        <div class="academy-card">
+          <img src="images/card-img_1.png" alt="">
+          <div class="card-text">
+            <h6>Jul 28, 2025, 1:46:25 AM</h6>
+            <p>How to Reasearch Stocks: A Step-by-Step Guide for New Investors</p>
+          </div>
+        </div>
+
+        <div class="academy-card">
+          <img src="images/card-img_1.png" alt="">
+          <div class="card-text">
+            <h6>Jul 28, 2025, 1:46:25 AM</h6>
+            <p>How to Reasearch Stocks: A Step-by-Step Guide for New Investors</p>
+          </div>
+        </div>
+
+        <div class="academy-card">
+          <img src="images/card-img_1.png" alt="">
+          <div class="card-text">
+            <h6>Jul 28, 2025, 1:46:25 AM</h6>
+            <p>How to Reasearch Stocks: A Step-by-Step Guide for New Investors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+      <h1 id="header">What Our Users Say...</h1>
       
-     </section>
+      <div class="test-contents">
+        <div class="item">
+          <div class="test-header">
+            <div class="client-img">
+              <img src="images/art.jpg" alt="">
+            </div>
+            <div class="client-desc">
+                <h2>Mohammed Afroz Afroz</h2>
+                <p>Hyderabad, India</p>                
+            </div>
+          </div>
+          <div class="test-desc">
+            <p>
+              This Side Mohammed Afroz From Hyderabad, India “Musaffa" has quickly become one of my favorite apps, 
+              thanks to its sleek design and powerful features. The app’s versatility allows me to stay organized, 
+              informed, and connected, all from the convenience of my mobile device. I appreciate the attention to 
+              detail and dedication to user satisfaction that the developers have put into Musaffa. It’s truly a game-changer 
+              and a must-have app for anyone looking to improve their overall digital experience.
+            </p>
+            <img src="images/stars.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="test-header">
+            <div class="client-img">
+              <img src="images/art.jpg" alt="">
+            </div>
+            <div class="client-desc">
+                <h2>Mohammed Afroz Afroz</h2>
+                <p>Hyderabad, India</p>                
+            </div>
+          </div>
+          <div class="test-desc">
+            <p>
+              This Side Mohammed Afroz From Hyderabad, India “Musaffa" has quickly become one of my favorite apps, 
+              thanks to its sleek design and powerful features. The app’s versatility allows me to stay organized, 
+              informed, and connected, all from the convenience of my mobile device. I appreciate the attention to 
+              detail and dedication to user satisfaction that the developers have put into Musaffa. It’s truly a game-changer 
+              and a must-have app for anyone looking to improve their overall digital experience.
+            </p>
+            <img src="images/stars.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="test-header">
+            <div class="client-img">
+              <img src="images/art.jpg" alt="">
+            </div>
+            <div class="client-desc">
+                <h2>Mohammed Afroz Afroz</h2>
+                <p>Hyderabad, India</p>                
+            </div>
+          </div>
+          <div class="test-desc">
+            <p>
+              This Side Mohammed Afroz From Hyderabad, India “Musaffa" has quickly become one of my favorite apps, 
+              thanks to its sleek design and powerful features. The app’s versatility allows me to stay organized, 
+              informed, and connected, all from the convenience of my mobile device. I appreciate the attention to 
+              detail and dedication to user satisfaction that the developers have put into Musaffa. It’s truly a game-changer 
+              and a must-have app for anyone looking to improve their overall digital experience.
+            </p>
+            <img src="images/stars.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+   </section>
+  
+    <div class="referral">
+      <div class="text">
+        <span>Join our new <b>Referral Program</b></span>
+        <p>Start earning cash for every new subscriber you refer</p>
+      </div>
+      <div class="btn">
+        <button class="join">Join Program</button>
+        <button class="know">Know More</button>
+      </div>
+    </div>
+
+    <div class="download-musaffa">
+      <div class="container">
+        <div class="left-col">
+          <h3>
+            Download Musaffa <br>
+            on your phone
+          </h3>
+          <p>Start making halal investment decisions now!</p>
+          <div class="app-links">
+            <a href="#" id="ios"><img src="images/footer-ios-app.svg" alt=""></a>
+            <a href="#"><img src="images/footer-gplay.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="right-col">
+          <img src="images/download.png" alt="">
+        </div>
+      </div>
+    </div>
 
     <footer>
       <section class="footer">
@@ -264,48 +396,48 @@
             <div class="footer-col">
               <h6 id="heading">Quick Links</h6>
               <ul>
-                <li>Stock Screener</li>
-                <li>ETF Screener</li>
-                <li>Super Investors</li>
-                <li>Purification Calculator</li>
-                <li>Zakat Calculator</li>
-                <li>Musaffa Academy</li>
-                <li>User Collections</li>
-                <li>Covered Countries</li>
+                <li><a href="#">Stock Screener</a></li>
+                <li><a href="#">ETF Screener</a></li>
+                <li><a href="#">Super Investors</a></li>
+                <li><a href="#">Purification Calculator</a></li>
+                <li><a href="#">Zakat Calculator</a></li>
+                <li><a href="#">Musaffa Academy</a></li>
+                <li><a href="#">User Collections</a></li>
+                <li><a href="#">Covered Countries</a></li>
               </ul>
             </div>
 
             <div class="footer-col">
               <h6 id="heading">Company</h6>
               <ul>
-                <li>About Us</li>
-                <li>For Business</li>
-                <li>Ambassador Program</li>
-                <li>Screening Methodology</li>
-                <li>Contact Us</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="business.html">For Business</a></li>
+                <li><a href="#">Ambassador Program</a></li>
+                <li><a href="#">Screening Methodology</a></li>
+                <li><a href="#">Contact Us</a></li>
               </ul>
             </div>
 
             <div class="footer-col">
               <h6 id="heading">Account</h6>
               <ul>
-                <li>Login</li>
-                <li>My Portfolio</li>
-                <li>My Watchlist</li>
-                <li>Pricing Plans</li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#">My Watchlist</a></li>
+                <li><a href="#">Pricing Plans</a></li>
               </ul>
             </div>
 
             <div class="footer-col">
               <h6 id="heading">Legal</h6>
               <ul>
-                <li>Terms of Use</li>
-                <li>Privacy Policy</li>
-                <li>General Disclaimer</li>
-                <li>Brand Guidelines</li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">General Disclaimer</a></li>
+                <li><a href="#">Brand Guidelines</a></li>
               </ul>
             </div>
-
+            
             <div class="footer-col">
               <h6 id="heading">Install Our App</h6>
               <ul>
@@ -373,30 +505,8 @@
         });
     </script> -->
 
-    <script>
-      let currentIndex = 0;
-      const items = document.querySelectorAll('.carousel-item');
-      const totalItems = items.length;
+    
 
-      function moveToNext() {
-        if (currentIndex < totalItems - 1) {
-          currentIndex++;
-        } else {
-          currentIndex = 0;
-        }
-        updateCarouselPosition();
-      }
-
-      function updateCarouselPosition() {
-        const carousel = document.querySelector('.carousel');
-        const offset = -currentIndex * (items[0].offsetWidth + 20); // 20px is the margin between items
-        carousel.style.transform = `translateX(${offset}px)`;
-      }
-
-      // Auto-slide the carousel every 3 seconds
-      setInterval(moveToNext, 3000);
-    </script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
