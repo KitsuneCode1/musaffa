@@ -346,12 +346,15 @@ body {
 
 /* Business Banner Styling Starts */
 
-  .business-banner{
+  .business-page{
+    margin: 0;
+    padding: 0;
+  }
+  .business-page .business-banner{
     background-image: url(images/hero-banner.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 30px 60px;
-    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 60px;
 
     .first-text{ 
       width: 230px;   
@@ -360,6 +363,12 @@ body {
       padding: .5rem 1rem;
       background-color: #fff;
       border-radius: 1rem;
+
+      span{
+        background: linear-gradient(to right, #29A4BD, #1CAD50);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
 
     h3{
@@ -368,14 +377,536 @@ body {
     }
 
     p{
-      font-weight: 500;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
       letter-spacing: .8px;
     }
 
-    
+    .btn{
+      display: flex;
+      margin-top: 30px;
+      .demo{
+        display: flex;
+        text-transform: uppercase;
+        margin-right: 30px;
+        color: white;
+        font-size: .875rem;
+        font-weight: 500;
+        align-items: center;
+        padding: .875rem 2rem;
+        background: linear-gradient(to right, #29A4BD, #1CAD50);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        img{
+          width: 20px;
+          margin-right: 10px;
+          vertical-align: center;
+        }
+      }
+
+      .demo:hover{
+        /* background: ; */
+      }
+
+      .schedule{
+        display: flex;
+        text-transform: uppercase;
+        font-size: .875rem;
+        font-weight: 500;
+        align-items: center;
+        padding: .875rem 2rem;
+        background: transparent;
+        border: 2px solid #1CAD50;
+        border-radius: 5px;
+        cursor: pointer;
+
+        img{
+          width: 20px;
+          margin-right: 10px;
+          vertical-align: center;
+        }
+
+        span{
+          background: linear-gradient(to right, #29A4BD, #1CAD50);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }    
+
+    .end-content{
+      margin-top: 40px;
+      display: flex;
+      .content{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .icon{
+          margin-bottom: 13px;
+          margin-right: 10px;
+          img{
+            width: 24px;
+          }
+        }
+
+        .text{
+          line-height: 1.5;
+          display: flex;
+          flex-direction: column;
+
+          b{
+            font-size: 1.2rem;
+            font-weight: bolder;
+          }
+
+          span{
+            color: #525252;
+            font-size: .9rem;
+          }
+        }
+      }
+    }
   }
 
 /* Business Banner Styling Ends */
+
+/* Supported Brokerages Styling Starts */
+
+  .business-page .supported-brokerages{
+    background-color: #f4f8fc;
+    padding: 3rem 0;
+    h2{
+      position: relative;
+      text-align: center;
+      font-size: 3rem;
+      margin: 0;
+    }
+    h2::before{
+      content: "";
+      position: absolute;
+      bottom: -.625rem;
+      left: 50%;
+      transform: translate(-50%);
+      width: 6rem;
+      height: .1875rem;
+      background-image: linear-gradient(90deg, #29A4BD 0%, #1CAD50 100%);
+    }
+
+    .image-slider{
+      background-color: white;
+      border-radius: 4rem;
+      padding: 0 4rem;
+      margin-top: 1.5rem;
+    }
+  }
+
+/* Supported Brokerages Styling Ends */
+
+/* Why Musaffa Styling Starts */
+
+  .why-musaffa{
+    background-color: #f4f8fc;
+    background-image: url(images/why-bg.png);
+    background-size: 300px auto;
+    background-position: top 1rem right;
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+
+    h2{
+      margin: 0;
+      position: relative;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    h2::before{
+      content: "";
+      position: absolute;
+      bottom: -.625rem;
+      left: 50%;
+      transform: translate(-50%);
+      width: 6rem;
+      height: .1875rem;
+      background-image: linear-gradient(90deg, #29A4BD 0%, #1CAD50 100%);
+    }
+
+    .middle-container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .why-musaffa-row{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0;
+      gap: 0
+    }
+
+    .why-musaffa-row .why-musaffa-row-image{
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      padding: 1.5rem 0;
+    }
+
+    .why-musaffa-row .why-musaffa-row-image img{
+      position: relative;
+      z-index: 2;
+      width: 100px;
+      display: block;
+    }
+
+    .why-musaffa-row .why-musaffa-row-text{
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-left: 3px solid #3E5B92;
+    }
+
+    .why-musaffa-row .why-musaffa-row-text .icon-container{
+      background-color: #3e5b92;
+      display: block;
+      position: absolute;
+      padding: 10px;
+      top: 30%;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border-top-left-radius: 0 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+
+    .why-musaffa-row .why-musaffa-row-text .icon-container img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .why-musaffa-row .why-musaffa-row-text .why-musaffa-row-text-content{
+      border-radius: 0;
+      background-color: transparent !important;
+      margin-top: 0;
+      margin-left: 60px;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+      margin-top: -12px;
+      margin-left: 0;
+      padding: 2rem;
+      border-radius: 1rem;
+
+      span{
+        display: block;
+        font-size: .875rem;
+        font-weight: 600;
+        color: #3e5b92;
+        text-align: left !important;
+      }
+
+      h2{
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }
+  }
+
+/* Why Musaffa Styling Ends */
+
+/* Key Features Styling Starts */
+
+  .key-features{
+    background-color: #f8fbff;
+    padding: 3rem 0;
+    
+    h2{
+      margin: 0;
+      margin-bottom: 1em;
+      position: relative;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    h2::before{
+      content: "";
+      position: absolute;
+      bottom: -.625rem;
+      left: 50%;
+      transform: translate(-50%);
+      width: 6rem;
+      height: .1875rem;
+      background-image: linear-gradient(90deg, #29A4BD 0%, #1CAD50 100%);
+    }
+  }
+
+  .key-features .key-features-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px;
+    margin-left: 50px;
+  }
+
+  .key-features .key-features-grid .key-features-card{
+    background-color: #fff;
+    border: 1px solid #D0DFF2;
+    height: 100%;
+    width: 350px;
+    border-radius: .5rem;
+    padding: 1.5em 1.5em 0;
+    text-align: left !important;
+  }
+
+  .key-features .key-features-grid .key-features-card img{
+    margin-bottom: 25px;
+    width: 40px;
+    vertical-align: middle;
+    /* margin-bottom: 1.5em; */
+  }
+
+  .key-features .key-features-grid .key-features-card h6{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .key-features .key-features-grid .key-features-card p{
+    color: #3c3c3c;
+    font-size: 1.1em;
+    line-height: 1.4;
+    letter-spacing: .5px;
+    font-weight: 400;
+  }
+
+/* Key Features Styling Ends */
+
+/* Transparent Packages Styling Starts */
+
+  .transparent-packages{
+    background: url(images/packages-bg.png);
+  }
+
+  .transparent-packages-content{
+    padding: 3em 0;
+  }
+
+  .transparent-packages-content h2{
+      margin: 0;
+      margin-bottom: 1em;
+      position: relative;
+      text-align: center;
+      font-size: 3rem;
+  }
+
+  .transparent-packages-content h2::before{
+    content: "";
+    position: absolute;
+    bottom: -.625rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 6rem;
+    height: .1875rem;
+    background-image: linear-gradient(90deg, #29A4BD 0%, #1CAD50 100%);
+  }
+
+  .transparent-packages-content p{
+    text-align: center;
+    color: #3c3c3c;
+    font-weight: 400;
+
+  }
+
+  .transparent-packages-content .buttons{
+    text-align: center;
+  }
+
+  .buttons .transparent-packages-btn{
+    display: inline-block;
+    width: 132px !important;
+    height: 48px !important;
+    font-size: 1rem;
+    max-width: none;
+    border-radius: 50rem;
+    cursor: pointer;
+  }
+
+  .gradient-btn{
+    background: linear-gradient(to right, #29A4BD, #1CAD50);
+    color: #fff;
+    border: none;
+    margin-right: 8px;
+  }
+
+  .border-btn{
+    border: 1px solid #DEE5EF;
+    background: transparent;
+    color: #000;
+  }
+/* Transparent Packages Styling Ends */
+
+/* Consulation Styling Starts */
+
+  .consultation-content{
+    border-radius: 10px;
+    width: 80%;
+    background-image: url(images/looking-for-custom-solution-bg.png);
+    text-align: center;
+    padding: 3em;
+  }
+
+  .consultation-content h2{
+    font-size: 3em;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+  }
+
+  .consultation-content p{
+    color: white;
+    font-weight: 400;
+    letter-spacing: .8px;
+  }
+
+  .consultation-btn{
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: .875rem;
+    font-weight: 500;
+    padding: .875rem 2rem;
+    margin-top: 10px;
+    background: linear-gradient(to right, #29A4BD, #1CAD50);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .consultation-btn img{
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: center;
+  }
+
+  .consultation-content a{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: block;
+    color: #afcbf0;
+    font-size: .875rem;
+  }
+/* Consulation Styling Ends */
+
+/* Cta Styling Starts */
+
+  .cta{
+    background-color: #f8f9fa;
+    margin-top: 70px;
+    padding: 4rem 0;
+  }
+
+  .cta .container{
+    padding: 0;
+  }
+
+  .cta .container .cta-content{
+    background-color: #f0fbfc;
+    background-image: url(images/cta-section-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    padding: 5rem 2rem;
+  }
+
+  .cta .container .cta-content h2{
+    margin: 0;
+    margin-bottom: 1em;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .cta .container .cta-content h2::before{
+    content: "";
+    position: absolute;
+    bottom: -.625rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 6rem;
+    height: .1875rem;
+    background-image: linear-gradient(90deg, #29A4BD 0%, #1CAD50 100%);
+  }
+
+  .cta .container .cta-content p{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #3c3c3c;
+    font-weight: 400;
+  }
+
+  .cta .container .cta-content .btn{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      .demo{
+        display: flex;
+        text-transform: uppercase;
+        margin-right: 30px;
+        color: white;
+        font-size: .875rem;
+        font-weight: 500;
+        align-items: center;
+        padding: .875rem 2rem;
+        background: linear-gradient(to right, #29A4BD, #1CAD50);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        img{
+          width: 20px;
+          margin-right: 10px;
+          vertical-align: center;
+        }
+      }
+
+      .demo:hover{
+        /* background: ; */
+      }
+
+      .schedule{
+        display: flex;
+        text-transform: uppercase;
+        font-size: .875rem;
+        font-weight: 500;
+        align-items: center;
+        padding: .875rem 2rem;
+        background: transparent;
+        border: 2px solid #1CAD50;
+        border-radius: 5px;
+        cursor: pointer;
+
+        img{
+          width: 20px;
+          margin-right: 10px;
+          vertical-align: center;
+        }
+
+        span{
+          background: linear-gradient(to right, #29A4BD, #1CAD50);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+/* Cta Styling Ends */
     .carousel-container {
       overflow: hidden;
       width: 100%;
@@ -405,6 +936,7 @@ body {
       padding: 0 2%;
       display: flex;
       flex-wrap: wrap;
+
     }
 
     .update-card{
