@@ -537,6 +537,10 @@ body {
       position: relative;
       display: flex;
       justify-content: center;
+
+      img{
+        width: 100px;
+      }
     }
     .why-musaffa-row{
       display: grid;
@@ -691,6 +695,8 @@ body {
 
   .transparent-packages{
     background: url(images/packages-bg.png);
+    height: 800px;
+    background-size: contain;
   }
 
   .transparent-packages-content{
@@ -748,6 +754,86 @@ body {
     border: 1px solid #DEE5EF;
     background: transparent;
     color: #000;
+  }
+
+  .packages-container{
+    overflow-x: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    grid-gap: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  } 
+  
+  .package-card-container{
+    text-align: center;
+    background-color: #fff;
+    width: 350px;
+    max-width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 30px #00000014;
+    border-radius: .625rem;
+    overflow: hidden;
+  }
+
+  .package-card-container .package-header{
+    background: linear-gradient(90deg, #76A7E7 0%, #2696BF 100%);
+    color: white;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1rem !important;
+  }
+
+  .package-card-container .pro{
+    background: linear-gradient(90deg, #A190EB 0%, #7E6BD5 100%); 
+  }
+
+  .package-card-container .premium{
+    background: linear-gradient(90deg, #2BA6BD 0%, #1FAF57 100%);
+  }
+
+  .package-card-container .package-header .small{
+    font-size: .875rem;
+  }
+
+  .package-card-container .package-header h4{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .package-card-container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 358px;
+  }
+
+  .package-card-container .package-feature-list .feature-list-item{
+    padding: 1rem;
+    border-bottom: 1px solid #C8E1EC;
+    font-size: .875rem;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    grid-gap: .5rem !important;
+    gap: .5rem !important;
+  }
+
+  .package-feature-list .border-none{
+    margin-bottom: 50px;
+  } 
+  
+  .package-card-container .package-feature-list li img{
+    margin-top: 1px;
+    width: 20px;
+  }
+
+  .package-card-container .package-feature-list li span{
+    color: #212529;
   }
 /* Transparent Packages Styling Ends */
 
@@ -1044,56 +1130,68 @@ body {
           width: 60%;
           .first-line{
             display: flex;
-            justify-content: flex-start;
             align-items: center;
+            justify-content: space-between;
             margin-bottom: 30px;
+            width: 100%;
 
-            h4{
-              color: #102048;
-              font-size: 25px;
-              font-weight: 550;
-              padding-right: 30px;
-              letter-spacing: 1px;
-            }
-
-            .sample{
-              background-color: transparent;
+            .left-col{
+              margin: 0;
               display: flex;
               align-items: center;
-              color: #102048;
-              height: 50px;
-              padding: 8px 12px;
-              padding-right: 20px;
-              border: 1px solid #B9D2E8;
-              border-radius: 10px;
-              cursor: pointer;
+              grid-gap: 30px;
+              gap: 30px;
 
-              input{
-                border: none;
-                text-align: center;
-                border-radius: 50%;
-                width: 25px;
-                height: 25px;
-                background-color: #e5e5e6;
+              h4{
+                color: #102048;
+                font-size: 25px;
+                font-weight: 550;
+                padding-right: 30px;
+                letter-spacing: 1px;
+                margin: 0;
+              }
 
-                &::placeholder{
+              .sample{
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                color: #102048;
+                height: 50px;
+                padding: 8px 12px;
+                padding-right: 20px;
+                border: 1px solid #B9D2E8;
+                border-radius: 10px;
+                cursor: pointer;
+
+                margin: 0 150px 0 0;
+
+                input{
+                  border: none;
+                  text-align: center;
+                  border-radius: 50%;
+                  width: 25px;
+                  height: 25px;
+                  background-color: #e5e5e6;
+
+                  &::placeholder{
+                    font-size: 18px;
+                    color: #000;
+                  }
+                }
+
+                span{
+                  margin-left: 10px;
+                  letter-spacing: .6px;
                   font-size: 18px;
-                  color: #000;
+                }
+
+                i{
+                  width: 8px;
+                  margin-left: 35px;
+                  font-size: 25px;
                 }
               }
 
-
-              span{
-                margin-left: 10px;
-                letter-spacing: .6px;
-                font-size: 18px;
-              }
-
-              i{
-                width: 8px;
-                margin-left: 35px;
-                font-size: 25px;
-              }
             }
           }
 
@@ -1148,12 +1246,33 @@ body {
         }
     }
     
+    .btn__add_portfolio{
+      text-align: right;
+      display: inline-block;
+      color: #a8a8c3 !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      -webkit-text-decoration-style: solid;
+      text-decoration-style: solid;
+      -webkit-text-decoration-skip: ink;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+      white-space: nowrap;
+      margin-top: 10px;
+    }
 
     /* Portfolio Styling Ends */
 
     /* Musaffa Academy Styling Starts */
 
     .academy{
+      position: relative;
       margin-bottom: 100px;
       .card-section{
         display: flex;
@@ -1182,6 +1301,26 @@ body {
           }
         }
       }
+
+      .title-row a{
+        color: #a8a8c3;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+        -webkit-text-decoration-style: solid;
+        text-decoration-style: solid;
+        -webkit-text-decoration-skip: ink;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        position: absolute;
+        right: 80px;
+        top: 30px;
+      }
     }
 
     /* Musaffa Academy Styling Ends */
@@ -1190,12 +1329,14 @@ body {
 
     .testimonial{
       width: 100%;
-      padding: 90px 0 20px;
+      padding: 90px 0px 20px;
       background-color: #f6f8fb;
 
       .test-contents{
+        width: 100%;
         display: flex;
-        margin-left: 0px;
+        justify-content: space-between;
+        margin-left: 0;
         margin-bottom: 50px;
         .item{
           width: 350px;
@@ -1211,8 +1352,8 @@ body {
 
             .client-img{
               position: relative;
-              width: 70px;
-              height: 70px;
+              width: 50px;
+              height: 50px;
               border-radius: 50%;
 
               img{
@@ -1226,34 +1367,35 @@ body {
             .client-desc{
               position: relative;
               margin-left: 15px;
+              padding: 0;
 
-              desc h2{
-                font-size: calc(16px + 0.6vw);
-                color: #15181d;
-                margin-bottom: 5px;
+              h4{
+                color: #0a1737;
+                font-size: 17px;
+                font-style: normal;
                 font-weight: 600;
+                margin: 0;
               }
 
-              p{
-                font-size: 16px;
-                color: #454545;
+              h6{
+                color: #b8c2da;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                margin: 0;
               }
             }
           }
 
-          .test-desc{
-            margin-top: 20px;
-
-            p{
-              font-size: 15px;
-              color: #454545;
-              line-height: 1.3;
-            }
-            
-            img{
-              width: 100px;
-            }
+          p{
+            color: #0a1737;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            margin-top: 15px;
+            line-height: 160%;
           }
+          
         }
       }
     }
