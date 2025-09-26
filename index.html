@@ -21,8 +21,14 @@
 <body>
   <nav class="navbar">
     <!-- Left: Logo -->
-     <a href="index.html"><img src="images/musaffa-logo-white.png" alt=""></a>
-
+     <div class="menu-links">
+      <img id="icon-menu" src="images/iconMenu.svg" alt="">
+      <div class="logo">
+        <a id="logo-black" href="index.html"><img src="images/musaffa-logo-black.png" alt=""></a>
+        <a id="logo-white" href="index.html"><img src="images/musaffa-logo-white.webp" alt=""></a>
+      </div>
+     </div>
+     
     <!-- Center: Navigation + Search -->
     <div class="nav-center">
       <ul class="nav-links">
@@ -93,8 +99,8 @@
     <section class="banner">
       <div class="banner-content">
 
-        <div class="portfolio">
-          <div class="left-col">
+        <div class="youtube-link">
+          <div class="youtube-video">
              <iframe width="561" height="316" src="https://www.youtube.com/embed/eePMLW_cW-g?list=TLGGLJ6C-BIEoUMyMDA5MjAyNQ" 
              title="Invest in Musaffa &amp; Own a Part of a Leading US-based Islamic Fintech Company" frameborder="0" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -102,9 +108,9 @@
           </div>
 
           <div class="right-col">
-            <h1>The go-to platform for <br>
+            <h1>The go-to platform for 
               <span style="color: #1fb16e;">Shariah-compliant</span>
-              <br>investment research</h1>
+              investment research</h1>
             <button class="green-btn"><a href="#">view my portfolio</a></button>
           </div>
         </div>
@@ -112,22 +118,22 @@
         <div class="banner-info">
           <div class="achievements">
             <h1>#1*</h1>
-            <p>Website in the World for Halal <br>Investment Research</p>
+            <p>Website in the World for Halal Investment Research</p>
           </div>
 
           <div class="achievements">
             <h1>562,396</h1>
-            <p>Muslim Investors from 200+ <br>Countries Trust Our Platform</p>
+            <p>Muslim Investors from 200+ Countries Trust Our Platform</p>
           </div>
 
           <div class="achievements">
             <h1>8000+</h1>
-            <p>Mobile Reviews with a 4.8 <br>Average Rating - One of the Best <br>Halal Fintech Apps in the World</p>
+            <p>Mobile Reviews with a 4.8 Average Rating - One of the Best Halal Fintech Apps in the World</p>
           </div>
 
           <div class="achievements">
             <h1>129,937</h1>
-            <p>Stocks and ETFs are screened for <br>Shariah compliance</p>
+            <p>Stocks and ETFs are screened for Shariah compliance</p>
           </div>
         </div>
 
@@ -191,12 +197,14 @@
         </div>
 
         <div class="right-col">
-          <h3><span style="color: #00c853;">5,504</span> Users trust us with their Portfolios <br>worth <span style="color: #00c853;">$120,178,360</span> in total.</h3>
-          <ul>
-            <li>Connect and view overall Shariah Compliance of your portfolio</li>
-            <li>Automated purification calculation for your sell transactions</li>
-            <li>Get alerts when compliance changes and take necessary action</li>
-          </ul>
+          <div class="text">
+            <h3><span style="color: #00c853;">5,504</span> Users trust us with their Portfolios <br>worth <span style="color: #00c853;">$120,178,360</span> in total.</h3>
+            <ul>
+              <li>Connect and view overall Shariah Compliance of your portfolio</li>
+              <li>Automated purification calculation for your sell transactions</li>
+              <li>Get alerts when compliance changes and take necessary action</li>
+            </ul>
+          </div>
           <button><a href="#">sign in</a></button>
         </div>
       </div>
@@ -257,7 +265,7 @@
     <section class="academy">
       <div class="title-row">
         <h1 id="header">Musaffa Academy</h1>
-        <a href="#">View All</a>
+        <!-- <a href="#">View All</a> -->
       </div>
       <div class="card-section">
         <div class="academy-card">
@@ -420,7 +428,7 @@
     <footer>
       <section class="footer">
         <div class="container">
-            <div class="footer-col">
+            <div class="footer-col quick-links">
               <h6 id="heading">Quick Links</h6>
               <ul>
                 <li><a href="#">Stock Screener</a></li>
@@ -471,14 +479,14 @@
                 <li>Scan QR code to install app</li>
                 <div class="external-links">
                   <div class="right-col">
-                    <img src="images/qr-code.png" alt="" width="10px">
+                    <img id="display-none" src="images/qr-code.png" alt="" width="10px">
                   </div>
 
                   <div class="left-col">
                     <ul>
                       <li><a href="#"><img src="images/footer-ios-app.svg" alt=""></a></li>
                       <li><a href="#"><img src="images/footer-gplay.svg" alt=""></a></li>
-                      <li><a href="#"><img src="images/footer-chrome-ext.svg" alt=""></a></li>
+                      <li><a id="display-none" href="#"><img src="images/footer-chrome-ext.svg" alt=""></a></li>
                     </ul>
                   </div>
                 </div>
