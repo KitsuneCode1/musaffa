@@ -239,14 +239,17 @@ body {
     }
 
     .youtube-link{
-      padding: 0 8%;
+      padding: 0 4%;
       display: flex;
       justify-content: space-between;
       grid-template-columns: repeat(2, 1fr);
+      grid-gap: 100px;
     }
 
     .right-col{
+      margin: 0;
       h1{
+        margin: 0;
         font-weight: 600;
         font-size: 3rem;
         color: #213056;
@@ -1228,11 +1231,13 @@ body {
     /* Portfolio Styling Starts */
     
     .portfolio{
-      padding: 0 60px;
+      display: flex;
       margin-top: 50px;
       margin-left: 0;
+      width: 100%;
         .left-col{
           width: 60%;
+          padding-left: 40px;
           .first-line{
             display: flex;
             align-items: center;
@@ -1244,8 +1249,6 @@ body {
               margin: 0;
               display: flex;
               align-items: center;
-              grid-gap: 30px;
-              gap: 30px;
 
               h4{
                 color: #102048;
@@ -1348,6 +1351,11 @@ body {
         
         .right-col{
           margin-left: 0px;
+          padding-right: 40px;
+          width: 40%;
+          img{
+            width: 100%;
+          }
         }
     }
     
@@ -1563,12 +1571,14 @@ body {
 
     .download-musaffa{
       background-color: #425278;
+      padding: 0 80px;
+      padding-top: 20px;
 
       .container{
         .left-col{
           margin-top: 100px;
           h3{
-            font-size: 50px;
+            font-size: 60px;
             font-weight: 600;
             letter-spacing: 1px;
             line-height: 1.1;
@@ -1781,14 +1791,14 @@ body {
       /* Banner Starts */
 
       .youtube-link{
-        padding: 0 1%;
+        padding: 0 3%;
         display: grid;
-        justify-content: space-between;
         grid-template-columns: repeat(1, 1fr);
       }
 
       .youtube-link .youtube-video{
         width: 100%;
+        margin: 0;
 
         iframe{
           width: 100%;
@@ -1925,7 +1935,7 @@ body {
       /* Download-musaffa Starts */
 
       .download-musaffa{
-        padding: 0 20px;
+        padding: 0 30px;
       }
 
       .download-musaffa .container{
@@ -1945,7 +1955,7 @@ body {
 
       .download-musaffa .container .right-col{
         img{
-          width: 550px;
+          width: 500px;
         }
       }
 
@@ -1969,15 +1979,25 @@ body {
         display: grid;
         justify-content: flex-start;
         grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
         padding-left: 30px;
         width: 100%;
       }
 
       .quick-links{
+        width: 212px;
         padding: 0;
       }
 
-      .footer .container .footer-col .external-links #display-none{
+      .footer .container .footer-col .external-links .right-col{
+        display: none;
+      }
+
+      .footer .container .footer-col .external-links .left-col img{
+        width: 120px;
+      }
+
+      #display-none{
         display: none;
       }
 
@@ -1986,7 +2006,355 @@ body {
         flex-direction: column;
         justify-content: flex-start;
       }
+
+      .footer-info{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: .6px;
+        padding: 0 30px;
+        margin: 0;
+
+        p{
+          margin: 30px 0;
+        }
+
+        .line{
+          border: 1px solid #30466F;
+        }
+      }
+
+      .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        margin: 0;
+
+        .copyrights-text{
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+        }
+        img{
+          width: 100px;
+          margin-right: 20px;
+        }
+
+        p{
+          color: white;
+        }
+      }
+
+      .social-icons{
+        
+        a{
+          color: white;
+          margin-left: 18px;
+          font-size: 22px;
+        }
+      }
+
       /* Footer Ends */
+    }
+
+    @media (max-width: 767px){
+
+
+      /* Youtube video Starts */
+
+      .youtube-link .right-col{
+        margin-top: 10px;
+      }
+
+      .youtube-link .right-col h1{
+        font-size: 2.3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Youtube video Ends */
+
+      
+      /* Updates Starts */
+
+      .updates{
+        width: 100%;
+      }
+
+      .update-content{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      .update-content .update-card{
+        width: 80%;
+      }
+
+      /* Updates Ends */
+
+      /* Analytics Starts */
+
+      .analytics-content{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .analytics-content .left-col{
+        display: flex;
+        justify-content: center;
+        img{
+          margin-top: 20px;
+          margin-left: 0;
+          width: 400px;
+        }
+      }
+
+      .analytics-content .right-col{
+        padding: 0;
+        margin-top: 20px;
+        h3{
+          padding: 0;
+          font-size: 24px;
+        }
+        ul{
+          margin: 0;
+          font-size: 18px;
+        }
+      }
+
+      .analytics-content .right-col button{
+        width: 100%;
+      }      
+
+      /* Analytics Ends */
+
+      .referral{
+        padding: 0 20px;
+      }
+
+      .referral .btn{
+        margin-left: 0;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        align-items: center;
+      }
+
+      .referral .btn .join{
+        margin-left: 16px;
+        padding: 0;
+        width: 120px;
+        height: 40px;
+      }
+
+      .referral .btn .know{
+        padding: 0;
+        height: 40px;
+        width: 120px;
+      }
+
+      /* Download Musaffa Starts */
+
+      .download-musaffa{
+        width: 100%;
+        padding: 0;
+      }
+
+      .download-musaffa .container{
+        display: grid;
+        width: 100%;
+        margin: 0;
+        padding: 30px 0 50px;
+      }
+
+      .download-musaffa .container .left-col{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        order: 2;
+        margin-top: -100px;
+        h3{
+          font-size: 35px;
+          padding: 0%;
+        }
+
+        p{
+          font-size: 18px;
+        }
+      }
+
+      .download-musaffa .container .right-col{
+        width: 100%;
+        order: 1;
+        img{
+          width: 100%;
+        }
+      }
+
+      .download-musaffa .container .left-col .app-links{
+        margin-top: 40px;
+        a{
+          img{
+            width: 200px;
+          }
+        }
+        #ios{
+          margin-right: 20px;
+        }
+      }
+
+      /* Download-musaffa Ends */
+
+      /* Footer Starts */
+
+      .footer .container{
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding-left: 30px;
+        width: 100%;
+      }
+
+      /* Footer Ends */
+    }
+
+    @media (max-width: 576px){
+
+      /* Banner Starts */
+
+      .banner-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      /* Banner Ends */
+
+      /* Musaffa academy Starts */
+
+      .academy .card-section{
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+      }
+
+      /* Musaffa academy Ends */
+
+      /* Referral Starts */
+
+      
+      .referral{
+        margin-left: 40px;
+        padding: 20px 0;
+        padding-bottom: 20px;
+        border-radius: 15px;
+        width: 85%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f6f8fb;
+
+        .text{
+          font-weight: 400;
+          letter-spacing: 1px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+
+          span{
+            margin-bottom: 15px;
+            font-size: 20px;
+          }
+          p{
+            font-size: .86rem;
+            margin-left: 10px;
+          }
+        }
+
+        .btn{
+          width: 100%;
+          margin-left: 10px;
+          .join{
+            background-color: #1fb16e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: .875rem;
+            padding: .625rem;
+            font-weight: 600;
+            margin-right: 10px;
+            width: 90%;
+          }
+
+          .know{
+            background-color: transparent;
+            color: #1d2a48;
+            border: 1px solid #1d2a48;
+            border-radius: 5px;
+            font-size: .875rem;
+            padding: .625rem;
+            font-weight: 600;
+            width: 90%;
+          }
+        }
+      }
+      /* Referral Ends */
+
+      /* Download Musaffa Starts */
+
+      .download-musaffa{
+        width: 100%;
+        padding: 0;
+      }
+
+      .download-musaffa .container{
+        display: grid;
+        width: 100%;
+        margin: 0;
+        padding: 30px 0px 50px;
+      }
+
+      .download-musaffa .container h3{
+        margin: 0 60px;
+      }
+
+      /* Download Musaffa Ends */
+
+      /* Footer Starts */
+
+      .footer .container{
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px;
+        padding-left: 30px;
+        width: 100%;
+      }
+
+      .footer .container{
+        /* padding: 10px 0 20px; */
+      }
+
+      .footer .container .footer-col h6{
+        font-size: 18px;
+      }      
+
+      .footer .container .footer-col a{
+        font-size: 13px;
+      }
+
+      /* Footer Ends */
+
     }
 
     /* Media Query Ends */
