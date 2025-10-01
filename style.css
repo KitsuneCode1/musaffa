@@ -3266,7 +3266,7 @@ body {
 
   .commissions .commissions-content h2{
       margin: 0;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
       position: relative;
       text-align: center;
       font-size: 3rem;
@@ -3294,7 +3294,8 @@ body {
   }
 
   .table-wrapper{
-    max-width: 48rem;
+    margin-top: 5px;
+    max-width: 47rem;
     border: 2px solid #2F3B52;
     border-radius: .5rem;
     margin-right: auto !important;
@@ -3313,7 +3314,7 @@ body {
   }
 
   .table-wrapper thead{
-    font-size: 1.1rem;
+    font-size: .95rem;
   }
 
   .table>thead {
@@ -3323,24 +3324,221 @@ body {
   .table-wrapper thead tr th{
     font-weight: 400;
     text-transform: uppercase;
-    text-align: centerp;
-    padding: 1rem;
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .table-wrapper tbody{
-    border-top: 1px solid #2F3B52;
-    vertical-align: middle;
-  }
-
-  .table-wrapper tbody tr th{
-    font-weight: 600;
-    text-transform: uppercase;
     text-align: left;
     padding: 1rem;
     white-space: nowrap;
     border: 0;
   }
 
+  .table-wrapper tbody{
+    font-size: 1.25rem;
+    border-top: 1px solid #2F3B52;
+    vertical-align: middle;
+  }
+
+  .table-wrapper tbody tr{
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .table-wrapper tbody tr th{
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    white-space: nowrap;
+  }
+
+  .table-wrapper tbody tr td{
+    font-weight: bolder;
+  }
+
+  .commissions-referral-para{
+    margin: 0;
+    max-width: 50rem;
+    letter-spacing: .8px;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-inline: auto;
+    line-height: 1.8;
+    color: #3f3f3f;
+  }
+
   /* Commissions Section Styling Ends */
+
+  /* More Section Styling Starts */
+
+  .more{
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .more .more-content{
+    padding-left: 65px;
+    padding-left: 65px;
+    padding-inline: 4rem;
+    max-width: 58rem;
+  }
+
+  .more-content h2{
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .more-content ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+  .more-content ul li{
+    font-size: 1.15rem;
+    letter-spacing: .8px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  .more-content ul li::marker{
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: auto !important;
+  }
+
+  /* More Section Styling Ends */
+
+  /* Benefits Section Styling Starts */
+
+  .benefits{
+    margin-top: 50px;
+    padding-left: 65px;
+    padding-left: 65px;
+    padding-inline: 4rem;
+  }
+
+  .benefits-content{
+    display: grid;
+    gap: 2.5rem;
+    max-width: 80rem;
+    margin-inline: auto;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+  }
+
+  .other-benefits-title{
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 3em;
+  }
+
+  .benefits-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .benefits-content ul li{
+    font-weight: 400;
+    padding-left: 2rem;
+    max-width: 40rem;
+    line-height: 1.5;
+    position: relative;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .benefits-content ul li::before{
+    content: url(images/list-type.svg);
+    position: absolute;
+    left: 0;
+    top: .125rem;
+  }
+
+  .benefits-content img{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 5rem 0;
+    height: auto;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  /* Benefits Section Styling Ends */
+
+  /* Ready Section Styling Starts */
+
+  .ready{
+    padding-left: 65px;
+    padding-left: 65px;
+    padding-inline: 4rem;
+    margin-top: 100px;
+  }
+  .ready article{
+    border-radius: 1rem;
+    padding-block: 3.125rem;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    background-image: url(images/ready-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ready article h2{
+      margin: 0;
+      margin-bottom: 2.5rem;
+      position: relative;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 600;
+  }
+
+  .ready article h2::before{
+    content: "";
+    position: absolute;
+    bottom: -.625rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 6rem;
+    height: .1875rem;
+    background-image: linear-gradient(90deg, #29A4BD 0%, #1CAD50 100%);
+  }
+
+  .ready article #italic{
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 55rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .ready article #bold{
+    font-size: 1.2rem;
+    font-style: normal;
+    max-width: 55rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .ready .gradient-btn{
+      font-size: 1.1rem;
+      max-width: max-content;
+      border-radius: .5rem;
+      padding-top: .8rem !important;
+      padding-bottom: .8rem !important;
+      text-decoration: none;
+    }
+
+  /* Ready Section Styling Ends */
