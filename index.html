@@ -19,7 +19,8 @@
   
 </head>
 <body>
-  <nav class="navbar">
+  <div class="main-wrapper">
+    <nav class="navbar">
     <!-- Left: Logo -->
      <div class="menu-links">
       <img id="icon-menu" src="images/iconMenu.svg" alt="">
@@ -33,15 +34,15 @@
     <div class="nav-center">
       <ul class="nav-links">
         <li><a href="business.html">For Business</a></li>
-        <li>
-          <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+        <li id="nav-page">
+          About Us <i class="fas fa-caret-down"></i>
           <div class="dropdown">
             <a href="about-us.html">About Us</a>
             <a href="screen-methodology.html">Screen Methodology</a>
             <a href="ambassador-program.html">Ambassador Program</a>
           </div>
         </li>
-        <li><a href="#">Investor Relations</a></li>
+        <li><a href="investor-relations.html">Investor Relations</a></li>
 
       </ul>
 
@@ -89,11 +90,11 @@
         </div>
     </section> -->
 
-    <section class="carousel">
+    <!-- <section class="carousel">
       <video autoplay loop muted>
         <source src="slider.mov/slider.mov" type="video/mov">
       </video>
-    </section>
+    </section> -->
 
     <!--  Banner section -->
     <section class="banner">
@@ -151,42 +152,57 @@
                 <img src="images/investor-hangout-logo.png" alt="Logo 8" />
                 <img src="images/associated-press-logo.png" alt="Logo 9" />
               <!-- Add more carousel items here -->
-              </div>
-            </div>
+              <!-- </div>
+            </div> -->
         </div>
       </div>
     </section>
     
     <!-- Updates Section -->
-    <section class="updates">
+    <div class="updates">
         <h1 id="header">What's New</h1>
+        
+        <div class="update-row">
+          <div>
+            <a href="#" class="update-col">
+              <div class="news-image">
+                <img src="images/halal.png" alt="">
+              </div>
 
-        <div class="update-content">
-          <div class="update-card">
-            <img src="images/halal.png" alt="">
-            <div class="update-text">
-              <h4>Free Halal Status Lookup for 120,000+ Stocks and 3,000+ ETFs</h4>
-              <p>You can now check the halal compliance status of over 120,000 stocks...</p>
-            </div>
+              <div class="news-text">
+                <h5>Free Halal Status Lookup for 120,000+ Stocks and 3,000+ ETFs</h5>
+                <p _ngcontent-serverapp-c347="">You can now check the halal compliance status of over 120,000 stocks...</p>
+              </div>
+            </a>
           </div>
 
-          <div class="update-card">
-            <img src="images/refer.png" alt="">
-            <div class="update-text">
-              <h4>Musaffa Launches Referral Program with Free Premium Access</h4>
-              <p>We're excited to introduce our new referral program to help you share...</p>
-            </div>
+          <div>
+            <a href="#" class="update-col">
+              <div class="news-image">
+                <img src="images/refer.png" alt="">
+              </div>
+
+              <div class="news-text">
+                <h5>Musaffa Launches Referral Program with Free Premium Access</h5>
+                <p>We re excited to introduce our new referral program to help you share...</p>
+              </div>
+            </a>
           </div>
 
-          <div class="update-card">
-            <img src="images/offer.png" alt="">
-            <div class="update-text">
-              <h4>Limited-Time Offer: 33% Off Annual Plans Ending Soon</h4>
-              <p>Take advantage of our biggest discount of the year with 33% off...</p>
-            </div>
+          <div>
+            <a href="#" class="update-col">
+              <div class="news-image">
+                <img src="images/offer.png" alt="">
+              </div>
+
+              <div class="news-text">
+                <h5>Limited-Time Offer: 33% Off Annual Plans Ending Soon</h5>
+                <p>Take advantage of our biggest discount of the year with 33 off...</p>
+              </div>
+            </a>
           </div>
         </div>
-    </section>
+      </div>
 
     <!-- Analytics Section -->
     <section class="analytics">
@@ -265,7 +281,7 @@
     <section class="academy">
       <div class="title-row">
         <h1 id="header">Musaffa Academy</h1>
-        <!-- <a href="#">View All</a> -->
+        <a href="#">View All</a>
       </div>
       <div class="card-section">
         <div class="academy-card">
@@ -428,99 +444,148 @@
     </div>
 
     <footer>
-      <section class="footer">
-        <div class="container">
-            <div class="footer-col quick-links">
-              <h6 id="heading">Quick Links</h6>
-              <ul>
-                <li><a href="#">Stock Screener</a></li>
-                <li><a href="#">ETF Screener</a></li>
-                <li><a href="#">Super Investors</a></li>
-                <li><a href="#">Purification Calculator</a></li>
-                <li><a href="#">Zakat Calculator</a></li>
-                <li><a href="#">Musaffa Academy</a></li>
-                <li><a href="#">User Collections</a></li>
-                <li><a href="#">Covered Countries</a></li>
-              </ul>
-            </div>
+      <section class="container">
+        <nav class="footer">
+          <div class="footer-col quick-links">
+            <h6 class="nav-heading">Quick Links</h6>
+            <ul role="list" class="links-list">
+              <li><a href="#">Stock Screener</a></li>
+              <li><a href="#">ETF Screener</a></li>
+              <li><a href="#">Super Investors</a></li>
+              <li><a href="#">Purification Calculator</a></li>
+              <li><a href="#">Zakat Calculator</a></li>
+              <li><a href="#">Musaffa Academy</a></li>
+              <li><a href="#">User Collections</a></li>
+              <li><a href="#">Covered Countries</a></li>
+            </ul>
+          </div>
 
-            <div class="footer-col">
-              <h6 id="heading">Company</h6>
-              <ul>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="business.html">For Business</a></li>
-                <li><a href="ambassador-program.html">Ambassador Program</a></li>
-                <li><a href="screen-methodology.html">Screening Methodology</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
+          <div class="footer-col">
+            <h6 class="nav-heading">Company</h6>
+            <ul role="list" class="links-list">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="business.html">For Business</a></li>
+              <li><a href="ambassador-program.html">Ambassador Program</a></li>
+              <li><a href="screen-methodology.html">Screening Methodology</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
 
-            <div class="footer-col">
-              <h6 id="heading">Account</h6>
-              <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My Portfolio</a></li>
-                <li><a href="#">My Watchlist</a></li>
-                <li><a href="#">Pricing Plans</a></li>
-              </ul>
-            </div>
+          <div class="footer-col">
+            <h6 class="nav-heading">Account</h6>
+            <ul role="list" class="links-list">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">My Portfolio</a></li>
+              <li><a href="#">My Watchlist</a></li>
+              <li><a href="#">Pricing Plans</a></li>
+            </ul>
+          </div>
 
-            <div class="footer-col">
-              <h6 id="heading">Legal</h6>
-              <ul>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">General Disclaimer</a></li>
-                <li><a href="#">Brand Guidelines</a></li>
-              </ul>
-            </div>
-            
-            <div class="footer-col">
-              <h6 id="heading">Install Our App</h6>
-              <ul>
-                <li id="display-none">Scan QR code to install app</li>
-                <div class="external-links">
-                  <div class="right-col">
-                    <img src="images/qr-code.png" alt="" width="10px">
-                  </div>
+          <div class="footer-col">
+            <h6 class="nav-heading">Legal</h6>
+            <ul role="list" class="links-list">
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">General Disclaimer</a></li>
+              <li><a href="#">Brand Guidelines</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h6 class="nav-heading">Install Our App</h6>
+            <p class="scan-text">Scan QR code to install app</p>
+            <div class="store-badges">
+              <div class="qr-code">
+                <img src="images/qr-code.png" alt="qr-code" class="qr-code">
+              </div>
 
-                  <div class="left-col">
-                    <ul>
-                      <li><a href="#"><img src="images/footer-ios-app.svg" alt=""></a></li>
-                      <li><a href="#"><img src="images/footer-gplay.svg" alt=""></a></li>
-                      <li><a id="display-none" href="#"><img src="images/footer-chrome-ext.svg" alt=""></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </ul>
+              <div class="app-store-row">
+                <a href="#" target="_blank">
+                  <img src="images/footer-ios-app.svg" alt="app-store-badge" class="img-fluid">
+                </a>
+
+                <a href="#" target="_blank">
+                  <img src="images/footer-gplay.svg" alt="play-store-badge" class="img-fluid">
+                </a>
+
+                <a href="#" target="_blank">
+                  <img src="images/footer-chrome-ext.svg" alt="Google Chrome Extension" class="img-fluid">
+                </a>
+              </div>
             </div>
-        </div>
+          </div>
+        </nav>
         
-        <div class="footer-info">
-          <div class="line"></div>
+        <div class="footer-para">
           <p>
             The term halal, when applied to investments, is subject to multiple interpretations. We define halal investments as investments permitted by Shariah law. Shariah-compliant investments are investment products governed by the requirements of Shariah law and the principles of the Islamic religion. <br><br>
             #1 Website: Per web analytics of Similarweb, Semrush, and Similar Sites in comparison to competitors for the year of 2024.
           </p>
-          <div class="line"></div>
         </div>
 
-        <div class="copyrights">
+        <div class="copyrights-wrapper">
           <div class="copyrights-text">
-            <img src="images/dmca-badge.png" alt="">
+            <a href="#">
+              <img src="images/dmca-badge.png" alt="" class="img-fluid">
+            </a>
             <p> &#169; 2025 Musaffa | All rights reserved.</p>
           </div>
 
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          </div>
+          <ul class="social-icons" role="list">
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
         </div>
       </section>
     </footer>
+
+    <div id="sidebar" class="sidebar_menu">
+      <button class="btn-menu-toggle-mobile">
+        <img src="images/iconMenuClose.svg" alt="">
+      </button>
+
+      <!-- <button class="btn-menu-toggle">
+        <i aria-hidden="true" class="fa fa-angle-right"></i>
+      </button> -->
+
+      <a href="#" class="sidebar-logo">
+        <img src="images/musaffa-logo-white.webp" alt="">
+      </a>
+
+      <ul class="sidebar-navigation">
+        <div class="menu-group-mobile">
+          <li class="nav-item">
+            <a href="business.html" class="nav-link">For Business</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="ambassador-program.html" class="nav-link">Ambassador Program</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about-us.html" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="business.html" class="nav-link">Investor Relations</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
 
     <!-- Swiper JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
