@@ -23,7 +23,7 @@
     <nav class="navbar">
     <!-- Left: Logo -->
      <div class="menu-links">
-      <img id="icon-menu" src="images/iconMenu.svg" alt="">
+      <img class="icon-menu" src="images/iconMenu.svg" alt="">
       <div class="logo">
         <a id="logo-black" href="index.html"><img src="images/musaffa-logo-black.png" alt=""></a>
         <a id="logo-white" href="index.html"><img src="images/musaffa-logo-white.webp" alt=""></a>
@@ -102,7 +102,7 @@
 
         <div class="youtube-link">
           <div class="youtube-video">
-             <iframe width="561" height="316" src="https://www.youtube.com/embed/eePMLW_cW-g?list=TLGGLJ6C-BIEoUMyNzA5MjAyNQ" 
+             <iframe width="561" height="316" src="https://www.youtube.com/embed/eePMLW_cW-g?list=TLGGLJ6C-BIEoUMwNDEwMjAyNQ" 
              title="Invest in Musaffa &amp; Own a Part of a Leading US-based Islamic Fintech Company" frameborder="0" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -159,7 +159,7 @@
     </section>
     
     <!-- Updates Section -->
-    <div class="updates">
+    <section class="updates">
         <h1 id="header">What's New</h1>
         
         <div class="update-row">
@@ -202,7 +202,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
     <!-- Analytics Section -->
     <section class="analytics">
@@ -281,7 +281,7 @@
     <section class="academy">
       <div class="title-row">
         <h1 id="header">Musaffa Academy</h1>
-        <a href="#" id="display-none">View All</a>
+        <a href="#">View All</a>
       </div>
       <div class="card-section">
         <div class="academy-card">
@@ -554,39 +554,40 @@
 
     <div id="sidebar" class="sidebar_menu">
       <button class="btn-menu-toggle-mobile">
-        <img src="images/iconMenuClose.svg" alt="">
+        <img src="images/iconMenuClose.svg" alt="" class="icon-menu">
       </button>
-
-      <!-- <button class="btn-menu-toggle">
-        <i aria-hidden="true" class="fa fa-angle-right"></i>
-      </button> -->
-
-      <a href="#" class="sidebar-logo">
-        <img src="images/musaffa-logo-white.webp" alt="">
-      </a>
-
-      <ul class="sidebar-navigation">
-        <div class="menu-group-mobile">
-          <li class="nav-item">
-            <a href="business.html" class="nav-link">For Business</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="ambassador-program.html" class="nav-link">Ambassador Program</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about-us.html" class="nav-link">About Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="business.html" class="nav-link">Investor Relations</a>
-          </li>
-        </div>
-      </ul>
-    </div>
+  
+    <!-- <button class="btn-menu-toggle">
+      <i aria-hidden="true" class="fa fa-angle-right"></i>
+    </button> -->
+  
+    <a href="#" class="sidebar-logo">
+      <img src="images/musaffa-logo-white.webp" class="icon-menu" alt="">
+    </a>
+  
+    <ul class="sidebar-navigation">
+      <div class="menu-group-mobile">
+        <li class="nav-item">
+          <a href="business.html" class="nav-link">For Business</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="ambassador-program.html" class="nav-link">Ambassador Program</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="about-us.html" class="nav-link">About Us</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="business.html" class="nav-link">Investor Relations</a>
+        </li>
+      </div>
+    </ul>        
+  
+    <div class="bottom-line"></div>
   </div>
-
+    
     <!-- Swiper JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -605,10 +606,40 @@
             prevEl: ".swiper-button-prev",
             },
         });
-    </script> -->
+      </script> -->
+      
 
-    
 
+    <script>
+      // var menuBtn = document.querySelector('.btn-menu-toggle-menu');
+      // var navLinksWrapper = document.querySelector('.nav-links');
+      // var navsLinks = document.querySelectorAll('.nav-links li a');
+
+      // menuBtn.addEventListener('click', toggleMenu);
+      // // Function to Toggle Menu Buttton
+      // function toggleMenu(){
+      //     menuBtn.classList.toggle('active');
+      //     navLinksWrapper.classList.toggle('active');
+      //   }
+        
+      //   for (let i = 0; i < navsLinks.length; i++) {
+      //     navsLinks[i].addEventListener('click', toggleMenu);
+      //   }
+
+      const menuBtn = document.querySelector("icon-menu");
+      const sideBar = document.querySelector(".sidebar_menu");
+
+      menuBtn.addEventListener('click', mobileMenu);
+
+      function mobileMenu() {
+        menuBtn.classList.toggle('acitve'),
+        sideBar.classList.toggle('acitve')
+      }
+
+    </script>
+
+</div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

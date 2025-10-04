@@ -29,7 +29,7 @@ body {
       z-index: 3;
     }
 
-    .navbar #icon-menu{
+    .navbar .icon-menu{
       display: none;
     }
 
@@ -270,7 +270,7 @@ body {
       h1{
         margin: 0;
         font-weight: 600;
-        font-size: 3rem;
+        font-size: calc(1.375rem + 1.5vw);
         color: #213056;
       }
     }
@@ -306,14 +306,17 @@ body {
       -webkit-backdrop-filter: blur(52px);
       backdrop-filter: blur(52px);
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       text-align: center;
     }
 
     .achievements{
+      flex: 0 0 auto;
+      width: 20%;
       h1{
         margin-bottom: 0;
-        font-size: 3.5rem;
+        font-size: 52px;
       }
 
       p{
@@ -408,7 +411,7 @@ body {
     }
 
     .updates #header{
-      font-size: calc(1.3rem + .6vw);
+      font-size: 3em;
       text-align: center;
     }
     
@@ -448,7 +451,7 @@ body {
 
     .news-image img{
       border-radius: 20px;
-      /* max-width: 100%; */
+      width: 350px;
       vertical-align: middle;
       overflow-clip-margin: content-box;
       overflow: clip;
@@ -541,7 +544,6 @@ body {
       margin-top: 50px;
       margin-left: 0;
       padding: 0 20px;
-      width: 100%;
         .left-col{
           width: 60%;
           padding-left: 10px;
@@ -558,13 +560,13 @@ body {
               flex-direction: row;
               flex-wrap: wrap;
               align-items: center;
+              gap: 1rem;
               width: 100%;
 
               h4{
                 color: #102048;
                 font-size: 25px;
                 font-weight: 550;
-                padding-right: 30px;
                 letter-spacing: 1px;
                 margin: 0;
               }
@@ -615,9 +617,9 @@ body {
 
           .stock{
             .portfolio-value{
-              padding: 0 5px;
+              padding: 0;
               margin-bottom: 30px;
-              font-size: 22px;
+              font-size: 20px;
               font-weight: 550;
               width: 450px;
               letter-spacing: 1px;
@@ -632,9 +634,9 @@ body {
               width: 450px;
               display: flex;
               justify-content: space-between;
-              padding: 0 5px;
+              padding: 0;
               #prices{
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 600;
               }
             }
@@ -753,6 +755,7 @@ body {
     /* Testimonial Styling Starts */
 
     .testimonial{
+      display: none;
       width: 100%;
       padding: 90px 0px 20px;
       background-color: #f6f8fb;
@@ -1745,7 +1748,8 @@ body {
       color: white;
       font-size: clamp(2.5rem, 2.069rem + 1.8391vw, 4rem);
       text-transform: uppercase;
-      margin-top: 0px;
+      margin-top: 150px;
+      margin-bottom: .5rem;
       z-index: 1;
     }
 
@@ -1834,6 +1838,7 @@ body {
       flex-direction: column;
       text-align: center;
       padding: 50px 0;
+      transition: padding .3s ease-in-out;
     }
 
     .team .container h2{
@@ -2011,6 +2016,53 @@ body {
       margin: 0;
       margin-top: 5px;
       font-size: clamp(.75rem, .706rem + .1878vw, .875rem);
+    }
+
+    .shariah-advisor{
+      padding-top: 120px;
+      padding-bottom: 3rem;
+    }
+
+    .shariah-advisor .container{
+      padding-left: 65px;
+      padding-right: 65px;
+      transition: padding .3s ease-in-out;
+    }
+
+    .shariah-advisor .section-title{
+      font-size: 2.5rem;
+      padding-bottom: 3rem;
+    }
+
+    .shariah-advisor .team-grid{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 20px;
+      margin: 0 auto;
+    }
+
+    .team-grid .team-member{
+      width: 40%;
+      text-align: center;
+      background: white;
+      transition: transform .2s ease, box-shadow .2s ease;
+      cursor: default;
+      border-radius: 16px;
+      padding-bottom: 18px;
+    }
+
+    .team-grid .team-member .member-image{
+      max-height: 275px;
+      overflow: hidden;
+    }
+
+    .team-grid .team-member .member-image img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px; 
     }
 
     /* Team Styling Ends */
@@ -2877,7 +2929,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: #040E26;
-    /* transition: width .3s ease-in-out; */
+    transition: width .3s ease-in-out;
     margin-left: 0;
     padding-top: 20px;
     z-index: 1040;
@@ -2885,6 +2937,7 @@ body {
     left: 0;
     top: 0;
     box-shadow: 0 0 2px #fff3;
+    overflow-y: hidden;
   }
 
   .btn-menu-toggle-mobile{
@@ -2945,6 +2998,7 @@ body {
     border-bottom: 1px solid #92A4D0;
     width: 100%;
   }
+
   .sidebar-navigation .nav-link{
     color: #fff;
     padding: 10px 0px;
@@ -3144,12 +3198,13 @@ body {
         background: linear-gradient(271deg, #1b284a 8.75%, #35497a 106.85%);
       }
 
-      .navbar #icon-menu{
+      .navbar .icon-menu{
         display: inline;
       }
 
-      .navbar #icon-menu{
+      .navbar .icon-menu{
         margin: 0;
+        margin-bottom: 5px;
         width: 30px;
         vertical-align: middle;
       }
@@ -3163,6 +3218,7 @@ body {
       }
 
       .navbar img {
+        margin-left: 5px;
         width: 130px;
       }
 
@@ -3313,8 +3369,7 @@ body {
       /* Referral Starts */
 
       .referral{
-        width: 90%;
-        margin: 50px 2%;
+        width: 100%;
       }
 
       .referral .btn{
@@ -3510,18 +3565,13 @@ body {
       }
 
       .youtube-link .right-col h1{
-        font-size: 2.3rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
 
       /* Youtube video Ends */
 
       
       /* Updates Starts */
-
-      .updates{
-        width: 100%;
-      }
 
       .update-content{
         width: 100%;
@@ -3694,68 +3744,6 @@ body {
 
       /* Musaffa academy Ends */
 
-      /* Referral Starts */
-
-      
-      .referral{
-        margin-left: 40px;
-        padding: 20px 0;
-        padding-bottom: 20px;
-        border-radius: 15px;
-        width: 85%;
-        height: 140px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: #f6f8fb;
-
-        .text{
-          font-weight: 400;
-          letter-spacing: 1px;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          text-align: center;
-
-          span{
-            margin-bottom: 15px;
-            font-size: 20px;
-          }
-          p{
-            font-size: .86rem;
-            margin-left: 10px;
-          }
-        }
-
-        .btn{
-          width: 100%;
-          margin-left: 10px;
-          .join{
-            background-color: #1fb16e;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: .875rem;
-            padding: .625rem;
-            font-weight: 600;
-            margin-right: 10px;
-            width: 90%;
-          }
-
-          .know{
-            background-color: transparent;
-            color: #1d2a48;
-            border: 1px solid #1d2a48;
-            border-radius: 5px;
-            font-size: .875rem;
-            padding: .625rem;
-            font-weight: 600;
-            width: 90%;
-          }
-        }
-      }
-      /* Referral Ends */
-
       /* Download Musaffa Starts */
 
       .download-musaffa{
@@ -3849,7 +3837,11 @@ body {
       /* Footer Ends */
     }
 
-    @media (max-width: 480px){
+    @media (max-width: 480px) and (min-width: 350px){
+
+      .sidebar_menu.active{
+        display: block;
+      }
 
       #display-none{
         display: none;
@@ -3861,11 +3853,19 @@ body {
         grid-gap: 20px;
       }
 
+      .youtube-video{
+        iframe{
+          max-height: 220px;
+        }
+      }
+
       .banner-info{
         margin-top: 0;
       }
 
       .achievements{
+        flex: 0 0 auto;
+        width: 80%;
         h1{
           margin-bottom: 0;
           font-size: 42px;
@@ -3874,33 +3874,88 @@ body {
 
       .updates{
         padding-top: 0;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-inline: 1rem;
         transition: padding .3s ease-in-out;
-        overflow-x: hidden;
       }
 
       .updates #header{
+        font-size: calc(1.3rem + .6vw);
         margin-right: 30px;
       }
 
       .update-row{
+        /* width: 100%; */
+        max-width: 450px;
         flex-wrap: nowrap;
         overflow-x: auto;
+        display: grid;
+        grid-template-columns: 1fr;
       }
 
       .update-row div{
-        width: 80%;
+        width: 100%;
         margin-top: .2rem;
       }
 
       .update-col{
-        padding: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 0 10%;
+        border-radius: 26px;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        transition: all .4s;
+        text-decoration: none;
+        height: 100%;
+      }
+
+      .news-image{
+        overflow: hidden;
+        border-radius: 20px;
+        max-height: 239px;
+        width: 100%;
       }
 
       .news-image img{
-        width: 300px;
+        border-radius: 20px;
+        max-width: 100%;
+        display: block;
+        /* width: 100%;  */
+      }
+
+      .analytics-content .right-col{
+        margin-top: 0;
+        margin-left: 0;
+        padding: 20px;
+        button{
+          background-color: #0db47d;
+          border-radius: 5px;
+          border: none;
+          width: 100%;
+          padding: 5px 8px;
+          font-weight: bold;
+          font-size: 22px;
+          margin-top: 20px;
+          text-transform: uppercase;  
+          
+          a{
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .analytics-content .left-col{
+        padding: 0 20px;
+      }
+
+      .analytics-content .left-col img{
+        display: inline;
+        max-width: 100%;
       }
 
       .analytics-content .right-col ul{
@@ -3914,9 +3969,21 @@ body {
 
       .portfolio{
         flex-direction: column;
-        padding: 0;
+        padding: 0 10px;
+      }
+
+      .portfolio .left-col{
+        width: 95%;
       }
       
+      .portfolio .right-col{
+        padding: 0;
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+
       .portfolio .left-col .first-line{
         display: flex;
         flex-wrap: wrap;
@@ -3932,7 +3999,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         flex-wrap: wrap;
-        gap: 0;
+        gap: .5rem;
         padding: 0;
       }
 
@@ -3940,17 +4007,82 @@ body {
         width: 126px;
         margin: 0;
         margin-right: 0;
+        margin-block-end: 0;
         font-size: 18px;
       }
 
       .portfolio .left-col .first-line .left .sample{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        color: #102048;
+        height: 50px;
+        gap: 10%;
+        padding: 8px 7px;
+        padding-right: 20px;
+        width: 100%;
+        border: 1px solid #B9D2E8;
+        border-radius: 10px;
+        cursor: pointer;
         margin-right: 0;
+
+        input{
+          border: none;
+          text-align: center;
+          border-radius: 50%;
+          margin-left: 1px;
+          width: 25px;
+          height: 25px;
+          background-color: #e5e5e6;
+
+          &::placeholder{
+            font-size: 18px;
+            color: #000;
+          }
+        }
+
+        span{
+          margin-left: 0px;
+          letter-spacing: .6px;
+          font-size: 12px;
+          width: 120px;
+        }
+
+        i{
+          width: 8px;
+          margin-left: 10px;
+          font-size: 25px;
+        }
       }
 
-      .portfolio .left-col .first-line .left .sample span{
-        font-size: 14px;
-        margin: 0 1px;
-        width: 150px;
+      
+
+      .portfolio .left-col .stock{
+        width: 100%;
+        .portfolio-value{
+          margin-bottom: 30px;
+          font-size: 20px;
+          font-weight: 550;
+          width: 100%;
+          letter-spacing: 1px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .stock-value{
+          width: 100%;
+          margin-bottom: 30px;
+          font-size: 18px;
+          font-weight: 500;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+          #prices{
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
       }
 
       .store-badges{
@@ -3962,8 +4094,157 @@ body {
         width: 50%;
       }
 
-      .tit
+      .academy .title-row a{
+        display: inline-block;
+        color: #a8a8c3;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+        -webkit-text-decoration-style: solid;
+        text-decoration-style: solid;
+        -webkit-text-decoration-skip: ink;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        position: absolute;
+        top: 102%;
+        right: 45%;
+      }
 
+      .referral{
+        padding: 30px 7px;
+        padding-bottom: 20px;
+        border-radius: 15px;
+        width: 85%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f6f8fb;
+
+        .text{
+          font-weight: 400;
+          letter-spacing: 1px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+
+          span{
+            margin-bottom: 5px;
+            font-size: 20px;
+          }
+          p{
+            font-size: .86rem;
+            margin-left: 0px;
+          }
+        }
+
+        .btn{
+          margin-top: 10px;
+          width: 100%;
+          margin-left: 20px;
+
+          .join{
+            background-color: #1fb16e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: .875rem;
+            padding: .625rem;
+            font-weight: 600;
+            margin-right: 10px;
+          }
+
+          .know{
+            background-color: transparent;
+            color: #1d2a48;
+            border: 1px solid #1d2a48;
+            border-radius: 5px;
+            font-size: .875rem;
+            padding: .625rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .referral .text{
+        font-weight: 400;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        
+        span{
+          font-size: 20px;
+        }
+        p{
+          font-size: .86rem;
+          margin-left: 10px;
+        }
+      }
+
+      .download-musaffa{
+        width: 100%;
+        padding: 0;
+      }
+
+      .download-musaffa .container{
+        display: grid;
+        width: 100%;
+        margin: 0;
+        padding: 30px 0px 50px;
+      }
+
+      .download-musaffa .container h3{
+        margin: 0 20px;
+        margin-bottom: 1rem;
+      }
+
+      .download-musaffa .container .left-col{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        order: 2;
+        margin-top: -100px;
+        h3{
+          font-size: 35px;
+        }
+
+        p{
+          font-size: 18px;
+          margin: 0 30px;
+        }
+      }
+
+      .download-musaffa .container .right-col{
+        width: 100%;
+        order: 1;
+        img{
+          width: 100%;
+        }
+      }
+
+      .download-musaffa .container .left-col .app-links{
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        grid-gap: 40px;
+        gap: 40px;
+        margin-top: 40px;
+        margin-top: 40px;
+        a{
+          img{
+            max-width: 100%;
+          }
+        }
+      }
 
       /* For Business Starts */
 
@@ -4037,7 +4318,7 @@ body {
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        padding: 20px 20px;
+        padding: 20px 10px;
       }
 
       .team .container h2{
@@ -4048,7 +4329,7 @@ body {
         flex-grow: 1;
         width: 10rem;
         flex-basis: calc(45% - .5rem);
-        max-width: calc(47% - .5rem);
+        max-width: calc(50% - .5rem);
         padding: .5rem;
         overflow: hidden;
         cursor: pointer;
@@ -4065,12 +4346,15 @@ body {
         cursor: pointer;
         text-align: center;
       }
+      .three-members .three-members-card img{
+        border-radius: 1rem;
+      }
 
       .team-members .team-members-card{
         flex-grow: 1;
         width: 10rem;
         flex-basis: calc(45% - .5rem);
-        max-width: calc(45% - .5rem);
+        max-width: calc(50% - .5rem);
         padding: .75rem;
         overflow: hidden;
         cursor: pointer;
