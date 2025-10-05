@@ -19,14 +19,10 @@
   
 </head>
 <body>
-  <div class="sidebar_menu">
-
-  </div>
-
   <nav class="navbar">
     <!-- Left: Logo -->
      <div class="menu-links">
-      <img id="icon-menu" src="images/iconMenu.svg" alt="">
+      <img class="icon-menu" src="images/iconMenu.svg" alt="">
       <div class="logo">
         <a id="logo-black" href="index.html"><img src="images/musaffa-logo-black.png" alt=""></a>
         <a id="logo-white" href="index.html"><img src="images/musaffa-logo-white.webp" alt=""></a>
@@ -171,6 +167,38 @@
       </section>
     </footer>
 
+    <div id="sidebar" class="sidebar_menu">
+      <button class="btn-menu-toggle-mobile" onclick="hideMenu()">
+        <img src="images/iconMenuClose.svg" alt="" class="icon-menu">
+      </button>
+  
+    <a href="index.html" class="sidebar-logo">
+      <img src="images/musaffa-logo-white.webp" class="icon-menu" alt="">
+    </a>
+  
+    <ul class="sidebar-navigation">
+      <div class="menu-group-mobile">
+        <li class="nav-item">
+          <a href="business.html" class="nav-link">For Business</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="ambassador-program.html" class="nav-link">Ambassador Program</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="about-us.html" class="nav-link">About Us</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="investor-relations.html" class="nav-link">Investor Relations</a>
+        </li>
+      </div>
+    </ul>        
+  
+    <div class="bottom-line"></div>
+  </div>
+
     <!-- Swiper JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -191,8 +219,23 @@
         });
     </script> -->
 
-    
+    <script>
+      const showBtn = document.querySelector('.icon-menu');
+      const sideBar = document.querySelector('.sidebar_menu');
+      const hideBtn = document.querySelector('.btn-menu-toggle-mobile')
 
-    <script src="script.js"></script>
+      showBtn.addEventListener('click', showMenu)
+
+      function showMenu() {
+        showBtn.classList.toggle('active');
+        sideBar.classList.toggle('active');
+      }
+
+      hideBtn.addEventListener('click', hideMenu)
+
+      function hideMenu(){
+        sideBar.style.left = "-100%";
+      }
+    </script>
 </body>
 </html>
