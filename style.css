@@ -938,7 +938,148 @@ body {
         margin: 0;
         padding: 0;
       }
-      .business-page .business-banner{
+
+      .hero img{
+        width: 100%;
+        height: 100%;
+      }
+      .hero .hero-container{
+        padding-top: 40px;
+        padding-left: 65px;
+        padding-right: 65px;
+        transition: padding .3s ease-in-out;
+        display: block;
+        width: 41.5%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+
+      .hero-start-pill{
+        font-size: .9rem;
+        font-weight: 500;
+        padding: .5rem 1rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        width: fit-content;
+      }
+
+      .hero-start-pill span{
+        background: linear-gradient(to right, #29A4BD, #1CAD50);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero-container h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+
+      .hero .lead{
+        text-align: left;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .hero-container .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .hero-container .btn{
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-container .btn span{
+        text-transform: uppercase;
+      }
+
+      .hero-container .btn .gradient-btn{
+        display: flex;
+        align-items: center;
+        font-size: .875rem;
+        font-weight: 500;
+        padding: .875rem 2rem;
+        background: linear-gradient(to right, #29A4BD, #1CAD50);
+        gap: .5rem;
+        text-transform: uppercase;
+        border: none; 
+        border-radius: 5px;
+        max-width: max-content;
+        cursor: pointer;
+      }
+
+      .btn .gradient-btn img{
+        width: 20px;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      .hero-container .btn .gradient-border-btn{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        position: relative;
+        font-size: .875rem;
+        font-weight: 500;
+        padding: .875rem 2rem;
+        border: 2px solid #1CAD50;
+        border-radius: 5px;
+        background: transparent;
+      }
+
+      .hero-container .btn .gradient-border-btn img{
+        width: 20px;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      .hero-number-container{
+        display: flex;
+        grid-gap: 1rem;
+        gap: 1rem;
+        align-items: stretch;
+      }
+
+      .hero-number-item{
+        display: flex;
+        gap: .5rem;
+        background-color: transparent;
+        flex-direction: row;
+        border-radius: .5rem;
+        padding: 1rem 2rem 1rem 1rem;
+        max-width: 50%;
+      }
+
+      .hero-number-item img{
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-top: .25rem;
+        max-width: 100%;
+      }
+
+      .hero-number-item .text{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-number-item .text b{
+        font-size: 1.2rem;
+        font-weight: bolder;
+      }
+
+      .hero-number-item .text span{
+        font-size: .9rem;
+        color: #525252;
+      }
+
+      /* .business-page .business-banner{
         background-image: url(images/hero-banner.png);
         background-size: cover;
         background-position: center;
@@ -993,10 +1134,6 @@ body {
               margin-right: 10px;
               vertical-align: center;
             }
-          }
-    
-          .demo:hover{
-            /* background: ; */
           }
     
           .schedule{
@@ -1057,7 +1194,7 @@ body {
             }
           }
         }
-      }
+      } */
     
     /* Business Banner Styling Ends */
     
@@ -2041,13 +2178,13 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 3rem;
       padding-top: 20px;
       margin: 0 auto;
     }
 
     .team-grid .team-member{
-      width: 40%;
+      width: 30%;
       text-align: center;
       background: white;
       transition: transform .2s ease, box-shadow .2s ease;
@@ -2056,9 +2193,33 @@ body {
       padding-bottom: 18px;
     }
 
+    .team-grid .team-member:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px #0000000f;
+    }
+
     .team-grid .team-member .member-image{
       max-height: 275px;
+      margin: 0 auto 20px;
       overflow: hidden;
+    }
+
+    .team-member .member-info{
+      text-align: start;
+      transition: all .3s;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .member-info h3{
+      font-weight: 400;
+      margin-bottom: .5rem;
+    }
+
+    .member-info p{
+      margin-top: 0;
+      letter-spacing: 1px;
+      font-weight: 400;
     }
 
     .team-grid .team-member .member-image img{
@@ -2066,6 +2227,28 @@ body {
       height: auto;
       object-fit: cover;
       border-radius: 16px; 
+    }
+
+    .shariah-advisor div{
+      text-align: center;
+    }
+
+    .shariah_compliance_certificate{
+      color: #1fb16e;
+      letter-spacing: .5px;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      -webkit-text-decoration-style: solid;
+      text-decoration-style: solid;
+      -webkit-text-decoration-skip: ink;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
     }
 
     /* Team Styling Ends */
@@ -2925,6 +3108,10 @@ body {
 
   /* Ready Section Styling Ends */
 
+  .sidebar_menu{
+    display: none;
+  }
+
   /* Footer Starts */
 
   footer{
@@ -3744,6 +3931,7 @@ body {
       /* Sidebar Menu Styling Starts */
 
       .sidebar_menu{
+        display: block;
         width: 100%;
         min-height: 100vh;
         background: #040E26;
@@ -3778,7 +3966,7 @@ body {
         font-weight: 400;
         font-variant: normal;
         text-transform: none;
-        line-height: 1;
+        line-height: 1.3;
         -webkit-font-smoothing: antialiased;
         max-width: 100%;
         display: block;
@@ -3830,7 +4018,7 @@ body {
         color: #fff;
         padding: 10px 0px;
         transition: background .3s;
-        font-size: .9rem;
+        font-size: .83rem;
         letter-spacing: .5px;
         font-style: normal;
         font-weight: 400;
@@ -3844,13 +4032,26 @@ body {
         border: 0;
       }
 
+      .sidebar-navigation #discount{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sidebar-navigation img{
+        vertical-align: middle;
+      }
+
       .sidebar_menu .bottom-line{
         background-color: #92A4D0;
+        margin-top: 3%;
         height: 1px;
         width: 100%;
       }
 
       .sidebar_menu.active{
+        /* display: flex;
+        flex-direction: column; */
         left: 0;
       }
 
@@ -4349,6 +4550,7 @@ body {
       }
 
       .team .container h2{
+        font-size: calc(1.375rem + 1.5vw);
         margin-bottom: .5rem;
       }
 
@@ -4386,6 +4588,31 @@ body {
         overflow: hidden;
         cursor: pointer;
         text-align: center;
+      }
+
+      .shariah-advisor .container h1{
+        font-size: calc(1.375rem + 1.5vw);
+        margin-bottom: 0;
+        padding-bottom: .5rem;
+      }
+
+      .shariah-advisor .container{
+        padding-left: 30px;
+        padding-right: 30px;
+        transition: all .3s ease-in-out;
+      }
+
+      .shariah-advisor .team-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid .team-member{
+        width: 100%;
+      }
+
+      .shariah-advisor div{
+        margin-top: 1.5rem;
       }
 
       .office-content .offices-card{
@@ -4561,14 +4788,21 @@ body {
         padding-right: 20px;
         padding-inline: 1rem;
         margin-right: auto;
-        margin-left: 10px;
         transition: padding .3s ease-in-out;
+        background-image: none;
       }
 
       .header-grid .header-text-wrapper{
+        width: 100%;
         border-radius: 1rem;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         background-color: #f4fff6;
+      }
+
+      .header-text-wrapper h1{
+        font-size: clamp(1.625rem, 1.25rem + 1.875vw, 3.5rem);
+        letter-spacing: .8px;
+        margin-top: 0;
       }
 
       .header-text-wrapper h1 img{
@@ -4590,6 +4824,8 @@ body {
       }
 
       .stats{
+        position: absolute;
+        top: 82%;
         padding-left: 20px;
         padding-right: 20px;
         transition: padding .3s ease-in-out;
@@ -4598,6 +4834,7 @@ body {
       }
 
       .stats-slider{
+        box-shadow: none;
         overflow: auto;
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
@@ -4609,14 +4846,25 @@ body {
 
       .stats-slider .stat-item{
         border: 1px solid #C0DFDF;
-        padding: 1rem;
+        padding: .5rem;
+        padding-left: 1rem;
         border-radius: .5rem;
         width: 17.5rem;
         flex-shrink: 0;
       }
 
+      .stat-item article div{
+        flex-direction: row;
+        align-items: center;
+      }
+
       .header-text-wrapper section{
         display: block;
+      }
+
+      .commissions{
+        margin-top: 50px;
+        padding-bottom: 0;
       }
 
       .commissions .commissions-content{
@@ -4631,6 +4879,10 @@ body {
         padding-right: 20px;
         transition: padding .3s ease-in-out;
         padding-inline: 1rem;
+      }
+
+      .more .more-content h2{
+        margin-bottom: 1rem;
       }
 
       .benefits{
