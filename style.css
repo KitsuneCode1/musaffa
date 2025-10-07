@@ -407,7 +407,6 @@ body {
       padding-inline: 4rem;
       transition: padding .3s ease-in-out;
       padding-top: 100px;
-      overflow-x: hidden;
     }
 
     .updates #header{
@@ -543,7 +542,10 @@ body {
       display: flex;
       margin-top: 50px;
       margin-left: 0;
-      padding: 0 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 0;
+      padding-bottom: 0;
         .left-col{
           width: 60%;
           padding-left: 10px;
@@ -665,10 +667,11 @@ body {
         
         .right-col{
           margin-left: 0px;
-          padding-right: 40px;
+          padding: 0;
           width: 40%;
           img{
             width: 100%;
+            height: 100%;
           }
         }
     }
@@ -2441,7 +2444,9 @@ body {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      text-align: center;
+      text-align: center;  
+      padding-left: 65px;
+      padding-right: 65px;
       padding-block: 3.125rem;
     }
 
@@ -2466,14 +2471,19 @@ body {
 
     /* Business Activities Styling Starts */
 
+    .business-page{
+      background-image: linear-gradient(to bottom, #fafafa 0, #fff 50%);
+    }
+
     .business-activities .container{
       padding-block: 3.125rem;
+      padding-inline: 0;
+      width: 100%;
     }
 
     .business-activities .container h2{
       font-size: clamp(2rem, 1.7126rem + 1.2261vw, 3rem);
       text-align: center;
-      font-size: 3em;
       margin: 0;
       margin-bottom: 1.5rem;
       font-weight: 600;
@@ -2491,6 +2501,17 @@ body {
 
     .business-activities .business-activities-inner{
       position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 65px;
+      padding-right: 65px;
+      padding-top: 1.5rem;
+      z-index: 2;
+      margin-bottom: 4rem;
+      padding-inline: 4rem;
+      gap: 4rem;
+      transition: padding .3s ease-in-out;
     }
 
     .business-activities .business-activities-inner::before{
@@ -2505,16 +2526,17 @@ body {
     .business-activities-inner .prohibitions{
       display: flex;
       justify-content: center;
-      gap: 2em;
-      margin-bottom: 60px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 3rem;
     }
 
     .business-activities-inner .prohibitions-content{
-      width: 150px;
       display: flex;
       align-items: center;
       flex-direction: column;
-      text-align: center;
+      max-width: 8rem;
+      /* text-align: center; */
     }
 
     .business-activities-inner .prohibitions-content img{
@@ -2530,12 +2552,20 @@ body {
       font-size: 16px;
     }
 
-    .business-activities-inner .container div{
+    .business-activities-inner div{
       display: grid;
-      padding-left: 15px;
-      padding-right: 15px;
       transition: padding .3s ease-in-out; 
-      width: 100w;
+    }
+
+    .methodology-content{
+      padding-inline: 0;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    .methodology-content .container{
+      padding: 0;
+      width: 100%;
     }
 
     .business-activities-inner .methodology-article{
@@ -2590,11 +2620,11 @@ body {
 
     .rounded-pill{
       border-radius: 50rem;
-      background-color: rgb(233, 233, 233);
+      background-color: rgb(243, 243, 243);
       text-align: center;
-      padding: .5rem .5rem;
+      padding: .7rem .2rem;
     }
-    .rounded-pills span{
+    .rounded-pill span{
       font-size: clamp(1.125rem, 1.037rem + .3756vw, 1.375rem);
     }
 
@@ -2610,6 +2640,9 @@ body {
       text-align: center;
       padding-left: 65px;
       padding-right: 65px;
+      padding-bottom: 50px;
+      padding-inline: 6rem;
+      margin-right: 15px;
     }
 
     .our-processes .container h2{
@@ -2632,6 +2665,7 @@ body {
       background-color: white;
       margin: 0 auto;
       text-align: left;
+      
     }
 
     .our-processes .paras-wrapper p{
@@ -3271,6 +3305,10 @@ body {
       .navbar .actions .btn-discount{
         display: none;
       }
+
+      .our-processes .container{
+        margin-right: 0px;
+      }
     }
 
     @media (max-width: 992px) {
@@ -3284,7 +3322,7 @@ body {
 
       /* Navbar Starts */
       .navbar {
-        padding: 20px;
+        padding: 15px;
         border: 1px solid #92a4d0;
         border-left: 0;
         border-right: 0;
@@ -3294,8 +3332,12 @@ body {
       .navbar .icon-menu{
         margin: 0;
         margin-bottom: 5px;
-        width: 30px;
+        width: 27px;
         vertical-align: middle;
+      }
+
+      .navbar .menu-links{
+        gap: .7rem;
       }
 
       .navbar .logo #logo-black{
@@ -3307,8 +3349,7 @@ body {
       }
 
       .navbar img {
-        margin-left: 5px;
-        width: 130px;
+        max-width: 120px;
       }
 
       .navbar .menu-links{
@@ -3367,10 +3408,6 @@ body {
       .banner-info{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .banner-info .achievements{
-        padding: 0 30px;
       }
 
       .banner-info .achievements p{
@@ -3532,46 +3569,6 @@ body {
         width: 100%;
       }
 
-      /* .quick-links{
-        width: 212px;
-        padding: 0;
-      }
-
-      .footer .container .footer-col .external-links .right-col{
-        display: none;
-      }
-
-      .footer .container .footer-col .external-links .left-col img{
-        width: 120px;
-      }
-
-      #display-none{
-        display: none;
-      }
-
-      .footer .container .footer-col .external-links ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-
-      .footer-info{
-        color: white;
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: .6px;
-        padding: 0 30px;
-        margin: 0;
-
-        p{
-          margin: 30px 0;
-        }
-
-        .line{
-          border: 1px solid #30466F;
-        }
-      } */
-
       .copyrights{
         display: flex;
         justify-content: space-between;
@@ -3640,6 +3637,7 @@ body {
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
+        margin-right: 0px;
       }
 
       /* Screen Methodology Header Ends  */
@@ -4088,15 +4086,20 @@ body {
       }
 
       .banner-info{
+        width: 100%;
         margin-top: 0;
       }
 
       .achievements{
-        flex: 0 0 auto;
-        width: 80%;
+        width: 100%;
         h1{
           margin-bottom: 0;
           font-size: 42px;
+        }
+
+        p{
+          margin-left: 20px;
+          margin-right: 20px;
         }
       }
 
@@ -4117,7 +4120,6 @@ body {
         /* width: 100%; */
         max-width: 450px;
         flex-wrap: nowrap;
-        overflow-x: auto;
         display: grid;
         grid-template-columns: 1fr;
       }
@@ -4131,6 +4133,7 @@ body {
         display: flex;
         justify-content: center;
         padding: 0 10%;
+        padding-top: 3%;
         border-radius: 26px;
         background: #FFF;
         display: flex;
@@ -4313,6 +4316,10 @@ body {
         }
       }
 
+      .portfolio .right-col img{
+        width: 98%;
+      }
+
       .store-badges{
         display: flex;
         gap: 0;
@@ -4377,7 +4384,8 @@ body {
         .btn{
           margin-top: 10px;
           width: 100%;
-          margin-left: 20px;
+          display: flex;
+          justify-content: space-around;
 
           .join{
             background-color: #1fb16e;
@@ -4387,7 +4395,7 @@ body {
             font-size: .875rem;
             padding: .625rem;
             font-weight: 600;
-            margin-right: 10px;
+            margin: 0;
           }
 
           .know{
@@ -4483,6 +4491,18 @@ body {
         transition: padding .3s ease-in-out;
         width: 100%;
         height: 100%;
+      }
+
+      .hero{
+        position: relative;
+        background-image: url(images/hero-banner.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .hero img{
+        display: none;
       }
 
       .business-page .business-banner .first-text{ 
@@ -4663,6 +4683,8 @@ body {
         flex-wrap: wrap;
       }
 
+
+
       .our-methodology .container{
         padding-left: 20px;
         padding-right: 20px;
@@ -4671,41 +4693,86 @@ body {
         transition: padding .3s ease-in-out;
       }
       
-      .business-activities .container h2{
-        padding: 0 1rem;
-        font-size: clamp(2rem, 1.7126rem + 1.2261vw, 3rem);
+      .business-activities .container h3{
+        font-size: 1.8rem;
+      }
+
+      .business-activities .business-activities-inner{
+        padding-inline: 1rem;
+        gap: 0;
+      }
+
+      .business-activities .business-activities-inner::before{
+        border-radius: 2rem 2rem 0 0;
       }
 
       .business-activities-inner .prohibitions{
-        padding: 0 5%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: .8rem;
+        gap: 1.5rem;
       }
 
       .business-activities .container{
         padding-left: 20px;
         padding-right: 20px;
-        padding-inline: 1rem;
+        padding-inline: 0rem;
+        padding-block: 1.8rem;
+        margin-top: 0;
         transition: padding .3s ease-in-out;
+      }
+
+      .business-activities .container h2{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
       }
 
       .business-activities .container .methodology-article{
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 1.1rem 1rem;
         align-items: center;
         border-radius: .625rem;
         box-shadow: #11111a1a 0 4px 16px, #11111a0d 0 8px 32px;
-        width: 100%;
-        max-width: 67rem;
+        width: 75%;
         margin-inline: auto;
+      }
+
+      .methodology-article h4{
+        margin: 0;
+        letter-spacing: .8px;
+      }
+    
+      .business-activities .business-activities-inner{
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .business-activities-inner .methodology-article .revenue{
+        width: 100%;
+        padding: 0;
+      }
+
+      .business-activities-inner .methodology-article .revenue p{
+        text-align: center;
+      }
+
+      .rounded-pill{
+        border-radius: 50rem;
+        background-color: rgb(243, 243, 243);
+        text-align: center;
+        padding: .5rem .5rem;
       }
 
       .gradient-text{
         text-align: center;
+      }
+
+      .our-processes .container{
+        margin-right: 0px;
+        padding-bottom: 0;
       }
 
       .our-processes .container img{
@@ -4823,14 +4890,17 @@ body {
         display: none;
       }
 
+      .ambassador-header{
+        width: 100%;
+      }
+
       .stats{
         position: absolute;
         top: 82%;
-        padding-left: 20px;
-        padding-right: 20px;
         transition: padding .3s ease-in-out;
-        padding-inline: 1rem;
+        padding-inline: 0rem;
         margin-top: 5rem;
+        margin-right: 0;
       }
 
       .stats-slider{
