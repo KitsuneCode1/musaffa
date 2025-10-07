@@ -2162,7 +2162,6 @@ body {
     }
 
     .shariah-advisor{
-      padding-top: 120px;
       padding-bottom: 3rem;
     }
 
@@ -4683,8 +4682,6 @@ body {
         flex-wrap: wrap;
       }
 
-
-
       .our-methodology .container{
         padding-left: 20px;
         padding-right: 20px;
@@ -4699,7 +4696,7 @@ body {
 
       .business-activities .business-activities-inner{
         padding-inline: 1rem;
-        gap: 0;
+        gap: 3rem;
       }
 
       .business-activities .business-activities-inner::before{
@@ -4726,6 +4723,16 @@ body {
       .business-activities .container h2{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+      }
+
+      .methodology-content{
+        margin-bottom: 0;
+      }
+
+      .methodology-content .container{
+        padding-top: 0;
+        gap: 1rem;
+        /* padding-bottom: 0; */
       }
 
       .business-activities .container .methodology-article{
