@@ -3099,10 +3099,10 @@ body {
   .section-header{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     gap: 40px;
-    margin-top: 60px;
+    margin-top: 0px;
     margin-bottom: 80px
   }
 
@@ -3115,9 +3115,9 @@ body {
   }
 
   .tabs-list{
-    font-size: .9rem;
+    font-size: 1rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     overflow-x: auto;
     white-space: nowrap;
     list-style: none;
@@ -3125,6 +3125,10 @@ body {
     padding-bottom: .5rem;
     margin-bottom: 0;
     max-width: 100%;
+  }
+
+  .tabs-list::-webkit-scrollbar{
+    display: none;
   }
 
   .tabs-list li{
@@ -3275,7 +3279,7 @@ body {
 
   .highlights .highlight {
     margin-top: 2rem;
-    padding: 50px 1rem 1rem;
+    padding: 50px 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -3363,6 +3367,10 @@ body {
     text-align: center;
     vertical-align: middle;
     margin-bottom: 4rem;
+  }
+
+  .cta-footer .cta-footer-description span {
+    font-weight: 600;
   }
 
   .cta-footer .cta-buttons{
@@ -4436,6 +4444,7 @@ body {
         flex-direction: column;
         padding: 0 10px;
         margin-bottom: 3rem;
+        gap: 2rem;
       }
 
       .portfolio .left-col{
@@ -4839,7 +4848,7 @@ body {
       }
 
       .transparent-packages{
-        overflow-x: hidden;
+        height: 100%;
       }
 
       .transparent-packages-content p{
@@ -5419,6 +5428,10 @@ body {
         margin: 0;
       }
 
+      .tabs-list{
+        font-size: .9rem;
+      }
+
       .header{
         display: flex;
         align-items: flex-start;
@@ -5457,16 +5470,113 @@ body {
         width: 100%;
       }
 
+      .section{
+        margin: 0;
+        padding: 2rem 1rem;
+      }
+
+      .section .container,
+      .section .container h2{
+        margin-top: 0rem;
+      }
+
+      .section-title{
+        margin-bottom: 0;
+      }
+
+      .section .section-description {
+        font-size: 16px;
+      }
+
+      .seen_as_logos{
+        padding-top: 2rem;
+      }
+
       .seen_as_logos_list {
         margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px 0;
+        justify-content: flex-start;
+        gap: 30px 15px;
         padding: 0
       }
 
+      .seen_as_logos_list a{
+        display: flex;
+      }
+
       .seen_as_logos_list img{
-        max-width: 3rem;
+        width: 90%;
+      }
+
+      .highlights{
+        gap: 2rem;
+      }
+
+      .highlights .highlight{
+        margin-top: 0;
+      }
+
+      .highlights .highlight .label {
+        margin-top: .5rem;
+        font-size: 16px;
+      }
+
+      .team-section .team-grid{
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .team-section .team-grid .team-member .member-info,
+      .shariah-advisor .team-grid .team-member .member-info{
+        text-align: center;
+      }
+
+      .investor_relations{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .cta-footer,
+      .cta-footer .container{
+        margin-top: 0;
+      }
+
+      .cta-footer .cta-footer-header{
+        margin-top: 0;
+      }
+
+      .cta-footer .cta-footer-header {
+        font-size: 28px;
+      }
+
+      .cta-footer .cta-footer-description {
+        padding: 0 1.5rem;
+        font-size: 16px;
+        letter-spacing: .5px;
+        margin-bottom: 2rem;
+      }
+
+      .cta-buttons{
+        flex-direction: column;
+      }
+
+      .our_mission_cta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cta-buttons .btn-success,
+      .cta-buttons .btn-link{
+        width: 100%;
+        align-items: center;
+      }
+
+      .cta-footer .cta-buttons{
+        align-items: center;
+        gap: 1.7rem;
       }
 
       /* Footer Starts */
